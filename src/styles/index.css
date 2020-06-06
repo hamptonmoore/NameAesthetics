@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, #__next {
+  height: 100%;
+}
+
+body {
+  @apply p-12;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

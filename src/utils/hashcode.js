@@ -1,5 +1,5 @@
-export function HashCode(str){
-    var hash = 0, i, chr;
+const hashCode = (str) => {
+    let hash = 0, i, chr;
     for (i = 0; i < str.length; i++) {
       chr   = str.charCodeAt(i);
       hash  = ((hash << 5) - hash) + chr;
@@ -7,3 +7,5 @@ export function HashCode(str){
     }
     return hash;
 }
+
+export default hashCode;

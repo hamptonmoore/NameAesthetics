@@ -40,6 +40,8 @@ class Index extends React.Component {
                     </div>
 
                 </div>
+
+                <img src="https://hampton.goatcounter.com/count?p=/projects/nameaesthetics/index"></img>
             </div>
         )
 

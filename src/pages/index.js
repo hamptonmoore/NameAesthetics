@@ -26,9 +26,9 @@ class Index extends React.Component {
     
         return(
             
-            <div className="flex justify-center h-full" style={{backgroundImage: `url(https://i.picsum.photos/id/314/1920/1080.jpg?blur=5`}}>
-                <div className="p-4 shadow rounded bg-white m-8">
-                    <h1 className="text-black text-4xl">Generate an aesthetic based on your name</h1>
+            <div className="flex justify-center">
+                <div className="p-12 shadow rounded bg-white m-8">
+                    <h1 className="text-black text-4xl mb-6 -mt-4">Generate an aesthetic based on your name</h1>
                     <div className="w-full mt-4">
                         <form >
                                 <Input onChange={(e) => {this.handleChange(e.target.value, 'first')}} placeholder="First Name" input={this.state.first} />

@@ -34,7 +34,7 @@ class Index extends React.Component {
                                 <Input onChange={(e) => {this.handleChange(e.target.value, 'first')}} placeholder="First Name" input={this.state.first} />
                                 <Input onChange={(e) => {this.handleChange(e.target.value, 'last')}} placeholder="Last Name" input={this.state.first} />
                         </form>
-                        <button onClick={() => Router.push(`/${this.state.first}/${this.state.last}`)} disabled={(this.state.first == undefined || this.state.last == undefined)}  className={`${(this.state.first == undefined || this.state.last == undefined)? 'bg-gray-700 hover:bg-gray-800 cursor-not-allowed': 'bg-blue-500 hover:bg-blue-700'} text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full`} type="button">
+                        <button onClick={() => Router.push(`/${this.state.first}/${this.state.last}`)} className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full`} type="button">
                             View
                         </button>
                     </div>
